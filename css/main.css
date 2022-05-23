@@ -1,0 +1,381 @@
+/*
+Style Name: CSS GRID Review 
+Description: Quatro - Fruit Sparkling Water
+Author: Nathalya Menezes and Tallyta Triollo
+Version: 1.0
+Tags: GRID, Build, Be Awesome
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* -------------
+  Reset
+-------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #626262;
+	font-family: 'Sanchez', serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, textarea {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.box-model {
+    margin: 1rem;
+    padding: 1rem;
+    background: #000;
+}
+
+.margin-left {
+    margin-left: 1em;
+}
+
+.margin-tb {
+    margin: 2em 0 5em;
+}
+
+.border-top {
+    border-top: 1px solid #070707;
+    padding-top: 1.5em;
+}
+
+.grey-border-top {
+     border-top: 1px solid #ccc;
+}
+
+/*------- Floats --------*/
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+/*------- End Floats --------*/
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+
+    .site {
+        max-width: none;
+    }
+
+    /*------------ Grid Items ------------*/
+
+    .head, .main > *, .foot {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    }
+
+    .one-item {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: 1fr;
+    }
+
+    .two-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+    .three-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+    .four-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+    .six-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+    #more-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-override {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+        grid-column: 1 / span 4;
+        background: #f4f4f4;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /*------------  End Grid Items ------------*/
+
+    /*------------ Start Nav Styling ------------*/
+		
+		.nav {
+            display: inline;
+			grid-column: 2 / span 3;
+			padding-top: 4em;
+			margin: 0;
+		}
+
+        .logo {
+            margin-left: 2em;
+            margin-top: 1em;
+        }
+
+		nav ul {
+			/* margin: 0; */
+			/* padding: 2em 30em .95em; */
+			text-decoration: none;
+			text-align: end;
+		}
+
+		nav ul li {
+			display: inline;
+			margin-right: 6em;
+		}
+
+		nav ul li:last-child {
+			margin-right: 0em;
+		}
+
+		nav ul li a {
+			color: #070707;
+			font-size: inherit;
+		}
+
+		nav ul li a:hover  {
+			padding-bottom: .5em;
+			border-bottom: 3px solid #070707;
+		}
+
+	
+		nav ul li a h4 {
+			display: inline;
+			padding: 1.5em 1.5em 1.5em 1.5em;
+			background-color: #9a2018;
+			color: #fff;
+			font-size: 1em;
+			transition: background-color 500ms linear;
+		}
+
+		nav ul li a:hover h4 {
+			background-color: #626262;
+			transition: background-color 500ms linear;
+		}
+
+        .nav ul {
+            /* display: contents; */
+            float: left;
+        }
+
+        .social_Media {
+            /* display: block; */
+            float: right;
+            text-align: right;
+            padding-right: 3em;
+            padding-bottom: 1em;
+        }
+
+        .social_Media a {
+            margin: 0 10px 0 10px;
+        }
+
+		/*------------ End Nav Styling ------------*/
+
+}
+
+/*------------ Start Hero ------------*/
+
+.hero {
+    margin: 0;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.hero-img {
+    display: grid;
+    grid-column: span 4;
+    margin-bottom: 1em;
+}
+
+.hero-img > * {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hero-img h2, .hero-img h3 {
+    background: #fff;
+    padding: 1em 1.75em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero-img h2 span, .hero-img h3 span {
+    font-size: .65em;
+    color: #9a2018;
+}
+
+.hero-img h2.left, .hero-img h3.left {
+    align-self:flex-end;
+    justify-self:start;
+    margin-left: 6em;
+}
+
+.hero-img h2.right, .hero-img h3.right {
+    align-self: flex-end;
+    justify-self: end;
+    margin-right: 6em;
+}
+
+.contact-item {
+    padding: 2em;
+}
+
+.over-image-text {
+    text-transform: uppercase;
+    font-size: 5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flavours-btn {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.farms-fruits-quote {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+/*------------ End Hero ------------*/
+
+/*------------ Start Why ------------*/
+
+.why {
+    margin-bottom: 3em;
+}
+
+.why-nav ul {
+    text-align: start;
+    padding: 2em 0;
+}
+
+.why-us-img {
+    display: grid;
+    grid-column: span 1;
+}
+
+.why-us-img img {
+    width: 100%;
+}
+
+.why-us-img > * {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.why-us-img h4 {
+    font-size: .9em;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.why-us-img p {
+    font-size: .7em;
+    padding: 0em 1.15em;
+}
+
+.why-us-img a {
+    color: inherit;
+}
+
+.why-us-img a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*------------End Why ------------*/
+
+
+/*-----------footer---------------*/
+#footer-section {
+    background: #333;
+}
+/*-----------End footer---------------*/
