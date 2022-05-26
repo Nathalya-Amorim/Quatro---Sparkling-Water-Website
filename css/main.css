@@ -150,8 +150,6 @@ input, textarea {
         column-gap: 2em;
     }
 
-
-
     .six-items {
         display: grid;
         grid-column: 2 / span 2;
@@ -282,12 +280,29 @@ input, textarea {
     border-top-left-radius: 25px;
 }
 
-.hero-img h2.right, .hero-img h3.right {
+.hero-img h2.right, .hero-img h3.right, .farms-fruits-quote {
     align-self: flex-end;
     justify-self: end;
     margin-right: 6em;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+}
+
+.quote-right{
+    background: #fff;
+    align-self: center;
+    justify-self: end;
+    margin-right: 6em;
+    border-top-right-radius: 25px;
+
+}
+
+.quote-left{
+    background: #fff;
+    align-self: center;
+    justify-self: start;
+    margin-left: 6em;
+    border-top-right-radius: 25px;
 }
 
 .contact-item {
@@ -439,3 +454,39 @@ footer nav ul {
     z-index: 0;
     position: relative;
 }
+
+.subscribe {
+    position: fixed;
+    top: 20em;
+    right: -5%;
+    transform: rotate(-90deg);
+    background-color: #FFF;
+    border-radius: 20px;
+    height: 70px;
+    width: 261px;
+    border-radius: 21px 21px 0 0;
+    min-width: 200px;
+}
+
+
+.rotate h2 {
+    font-weight: bold;
+    padding: 17px 33px 61px 16px;
+    color: #21759b;
+    padding: 6px;
+    margin: 10px;
+}
+
+.subscribe .rotate {
+    display: inline-flex;
+   
+}
+
+.rotate img {
+    transform: rotate(90deg);
+    padding: 13px;
+    width: 39px;
+    border-radius: 20px 0px 0px 14px;
+    background-color: #fbb5df;
+    height: 39px;
+  }
