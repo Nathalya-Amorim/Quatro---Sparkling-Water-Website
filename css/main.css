@@ -25,7 +25,7 @@ Accessibility
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip-path: auto !important;
-	color: #21759b;
+	color: #626262;
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
@@ -47,7 +47,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #626262;
-	font-family: 'Sanchez', serif;
+	font-family: 'Tw Cen MT', sans-serif;
 	font-size: 16px;
 }
 
@@ -106,7 +106,6 @@ input, textarea {
 /*------- End Floats --------*/
 
 /* _____________________________________
-
    02. CSS Grid
    _____________________________________ */
 
@@ -224,7 +223,7 @@ input, textarea {
 
 		nav ul li a {
 			color: #070707;
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 
 		/* nav ul li a:hover  {
@@ -239,12 +238,12 @@ input, textarea {
         .social_Media {
             float: right;
             text-align: right;
-            padding-right: 3em;
+            padding-right: 1em;
             padding-bottom: 1em;
         }
 
         .social_Media a {
-            margin: 0 10px 0 10px;
+            margin: 0 5px 0 5px;
         }
 
 		/*------------ End Nav Styling ------------*/
@@ -283,6 +282,7 @@ input, textarea {
 
 .hero-img h2.left, .hero-img h3.left {
     align-self:flex-end;
+    text-transform: uppercase;
     justify-self:start;
     margin-left: 6em;
     border-top-right-radius: 25px;
@@ -291,6 +291,7 @@ input, textarea {
 
 .hero-img h2.right, .hero-img h3.right, .farms-fruits-quote {
     align-self: flex-end;
+    text-transform: uppercase;
     justify-self: end;
     margin-right: 6em;
     border-top-right-radius: 25px;
@@ -318,6 +319,19 @@ input, textarea {
     border-radius: 2em;
 }
 
+.quote-right h2 {
+    font-family: cooper-black-std, serif;
+    text-align: left;
+}
+
+.quote-right p {
+    text-align: left;
+}
+
+.quote-right a {
+    color: #000;
+}
+
 .contact-item {
     padding: 2em;
 }
@@ -325,6 +339,7 @@ input, textarea {
 .over-image-text {
     text-transform: uppercase;
     font-size: 5em;
+    font-family: cooper-black-std, serif;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -392,7 +407,6 @@ input, textarea {
 }
 
 #more-btn, #cocktails-btn {
-
     display: block;
     width: 160px;
     background-color: #000;
@@ -404,6 +418,7 @@ input, textarea {
     border: none;
     border-radius: 29px;
 }
+
 /* =================Start Buttons =============== */
 
 
@@ -424,6 +439,14 @@ footer {
 
 footer nav ul {
     text-align: start;
+}
+
+.social-media-footer ul {
+    list-style-type: none;
+}
+
+.social-media-footer ul li {
+    padding-bottom: 1.5em;
 }
 
 /*-----------End footer---------------*/
@@ -490,7 +513,7 @@ footer nav ul {
     top: 20em;
     right: -5%;
     transform: rotate(-90deg);
-    background-color: #E2E5De;
+    background-color: #626262;
     border-radius: 20px;
     height: 70px;
     width: 261px;
@@ -502,7 +525,7 @@ footer nav ul {
 .rotate h2 {
     font-weight: bold;
     padding: 17px 33px 61px 16px;
-    color: #21759b;
+    color: #fff;
     padding: 6px;
     margin: 10px;
 }
@@ -523,6 +546,7 @@ footer nav ul {
 
 
 /*======== Begin story.html ========*/
+
 #our-story-description {
     padding-top: 4em;
     padding-bottom: 4em;
@@ -541,6 +565,7 @@ footer nav ul {
 /*======== End story.html ========*/
 
 /*======== Begin contact.html ========*/
+
 #contact-form {
     background: #aaa;
 }
