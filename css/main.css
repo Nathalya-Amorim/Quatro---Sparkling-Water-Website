@@ -95,11 +95,11 @@ input, textarea {
 
 /*------- Floats --------*/
 
-.f-left {
+.float-left {
     float: left;
 }
 
-.f-right {
+.float-right {
     float: right;
 }
 
@@ -127,6 +127,9 @@ input, textarea {
         display: grid;
         grid-column: 2 / span 2;
         grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
     }
 
     .two-items {
@@ -147,15 +150,6 @@ input, textarea {
         column-gap: 2em;
     }
 
-    .four-items {
-        display: grid;
-        grid-column: 2 / span 2;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-evenly;
-        row-gap: 2em;
-        column-gap: 2em;
-    }
-
     .six-items {
         display: grid;
         grid-column: 2 / span 2;
@@ -163,6 +157,8 @@ input, textarea {
         justify-content: space-evenly;
         row-gap: 2em;
         column-gap: 2em;
+        padding-bottom: 3em;
+        margin-bottom: 3em;
     }
 
     #more-btn {
@@ -170,17 +166,26 @@ input, textarea {
         margin-right: auto;
     }
 
-    .contact-override {
+    /* .contact-override {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
         grid-column: 1 / span 4;
-        background: #f4f4f4;
+        background: #f4f4;
         border-bottom: 1px solid #ccc;
-    }
+    } */
 
     /*------------  End Grid Items ------------*/
 
     /*------------ Start Nav Styling ------------*/
+
+    header {
+        position: sticky;
+        background-color: #fff;
+        top: 0px;
+        border-bottom: 1px solid #e6e6e6;
+        box-shadow: 0px 5px 8px #888;
+        z-index: 9999999;
+    }
 		
 		.nav {
             display: inline;
@@ -195,8 +200,6 @@ input, textarea {
         }
 
 		nav ul {
-			/* margin: 0; */
-			/* padding: 2em 30em .95em; */
 			text-decoration: none;
 			text-align: end;
 		}
@@ -206,42 +209,25 @@ input, textarea {
 			margin-right: 6em;
 		}
 
-		nav ul li:last-child {
+		header nav ul li:last-child {
 			margin-right: 0em;
 		}
 
 		nav ul li a {
 			color: #070707;
-			font-size: inherit;
+			font-size: 2em;
 		}
 
-		nav ul li a:hover  {
+		/* nav ul li a:hover  {
 			padding-bottom: .5em;
 			border-bottom: 3px solid #070707;
-		}
-
-	
-		nav ul li a h4 {
-			display: inline;
-			padding: 1.5em 1.5em 1.5em 1.5em;
-			background-color: #9a2018;
-			color: #fff;
-			font-size: 1em;
-			transition: background-color 500ms linear;
-		}
-
-		nav ul li a:hover h4 {
-			background-color: #626262;
-			transition: background-color 500ms linear;
-		}
+		} */
 
         .nav ul {
-            /* display: contents; */
             float: left;
         }
 
         .social_Media {
-            /* display: block; */
             float: right;
             text-align: right;
             padding-right: 3em;
@@ -260,6 +246,7 @@ input, textarea {
 
 .hero {
     margin: 0;
+    padding-bottom: 3em;
 }
 
 .hero-img img {
@@ -269,7 +256,7 @@ input, textarea {
 .hero-img {
     display: grid;
     grid-column: span 4;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 .hero-img > * {
@@ -284,21 +271,38 @@ input, textarea {
     font-weight: 300;
 }
 
-.hero-img h2 span, .hero-img h3 span {
-    font-size: .65em;
-    color: #9a2018;
-}
 
 .hero-img h2.left, .hero-img h3.left {
     align-self:flex-end;
     justify-self:start;
     margin-left: 6em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
-.hero-img h2.right, .hero-img h3.right {
+.hero-img h2.right, .hero-img h3.right, .farms-fruits-quote {
     align-self: flex-end;
     justify-self: end;
     margin-right: 6em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.quote-right{
+    background: #fff;
+    align-self: center;
+    justify-self: end;
+    margin-right: 6em;
+    border-top-right-radius: 25px;
+
+}
+
+.quote-left{
+    background: #fff;
+    align-self: center;
+    justify-self: start;
+    margin-left: 6em;
+    border-top-right-radius: 25px;
 }
 
 .contact-item {
@@ -318,64 +322,171 @@ input, textarea {
     margin-right: auto;
 }
 
+.flavours-btn {
+        display: block;
+        width: 160px;
+        background-color: #000;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 29px;
+}
+
 .farms-fruits-quote {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.border-top-bottom{
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding-top: 45px;
+}
+
+.bckgd-color {
+    background: #e6e6e6;
+    padding-bottom: 5em;
+    padding-top: 3em;
 }
 
 /*------------ End Hero ------------*/
 
-/*------------ Start Why ------------*/
-
-.why {
-    margin-bottom: 3em;
+/* =================Start Buttons =============== */
+.standard-button {
+    display: block;
+    width: 160px;
+    /* background-color: #000; */
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    /* color: #fff; */
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
 }
 
-.why-nav ul {
-    text-align: start;
-    padding: 2em 0;
+.standard-button.black-button {
+    background: #000;
+    color: #FFF;
 }
 
-.why-us-img {
-    display: grid;
-    grid-column: span 1;
+.standard-button.white-button {
+    background: #FFF;
+    color: #000;
 }
 
-.why-us-img img {
-    width: 100%;
-}
+#more-btn, #cocktails-btn {
 
-.why-us-img > * {
-    grid-column: 1;
-    grid-row: 1;
+    display: block;
+    width: 160px;
+    background-color: #000;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
 }
-
-.why-us-img h4 {
-    font-size: .9em;
-    font-weight: 700;
-    padding: 1em;
-}
-
-.why-us-img p {
-    font-size: .7em;
-    padding: 0em 1.15em;
-}
-
-.why-us-img a {
-    color: inherit;
-}
-
-.why-us-img a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/*------------End Why ------------*/
+/* =================Start Buttons =============== */
 
 
 /*-----------footer---------------*/
-#footer-section {
-    background: #333;
+#footer-section ul li a {
+    font-size: 1em;
 }
+
+.contact-zap {
+    position: sticky;
+    right: 2em;
+    bottom: 2em;
+}
+
+footer {
+    background: #d3d3d3;
+}
+
+footer nav ul {
+    text-align: start;
+}
+
 /*-----------End footer---------------*/
+
+
+.mb-2-em{
+    margin-bottom: 2em;
+}
+
+.mt-2-em{
+    margin-top: 2em;
+}
+
+.ml-2-em {
+    margin-left: 2em;
+}
+
+.mr-2-em {
+    margin-right: 2em;
+}
+
+#cocktails h2.label {
+    align-self: center;
+    justify-self: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#cocktails h2 {
+    background: #fff;
+    padding: 1em 1.75em;
+    font-size: 1.5em;
+    font-weight: 300;
+    z-index: 1;
+    margin-top: -3em;
+    position: relative;
+    text-align: center;
+}
+
+#cocktails img {
+    z-index: 0;
+    position: relative;
+}
+
+.subscribe {
+    position: fixed;
+    top: 20em;
+    right: -5%;
+    transform: rotate(-90deg);
+    background-color: #FFF;
+    border-radius: 20px;
+    height: 70px;
+    width: 261px;
+    border-radius: 21px 21px 0 0;
+    min-width: 200px;
+}
+
+
+.rotate h2 {
+    font-weight: bold;
+    padding: 17px 33px 61px 16px;
+    color: #21759b;
+    padding: 6px;
+    margin: 10px;
+}
+
+.subscribe .rotate {
+    display: inline-flex;
+   
+}
+
+.rotate img {
+    transform: rotate(90deg);
+    padding: 13px;
+    width: 39px;
+    border-radius: 20px 0px 0px 14px;
+    background-color: #fbb5df;
+    height: 39px;
+  }
