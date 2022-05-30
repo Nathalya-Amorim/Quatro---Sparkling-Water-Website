@@ -47,7 +47,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #626262;
-	font-family: 'Sanchez', serif;
+	font-family: 'Tw Cen MT', sans-serif;
 	font-size: 16px;
 }
 
@@ -212,19 +212,18 @@ input, textarea {
 
 		nav ul li a {
 			color: #070707;
-			font-size: inherit;
+			font-size: 1.25em;
 		}
 
 		nav ul li a:hover  {
-			padding-bottom: .5em;
-			border-bottom: 3px solid #070707;
+			padding-bottom: .25em;
+			border-bottom: 3px solid #cccccc;
 		}
 
 	
 		nav ul li a h4 {
 			display: inline;
 			padding: 1.5em 1.5em 1.5em 1.5em;
-			background-color: #9a2018;
 			color: #fff;
 			font-size: 1em;
 			transition: background-color 500ms linear;
@@ -244,12 +243,13 @@ input, textarea {
             /* display: block; */
             float: right;
             text-align: right;
-            padding-right: 3em;
+            margin-right: 2sem;
+            padding-right: 4em;
             padding-bottom: 1em;
         }
 
         .social_Media a {
-            margin: 0 10px 0 10px;
+            margin: 0px 20px 0 20px;
         }
 
 		/*------------ End Nav Styling ------------*/
@@ -307,22 +307,51 @@ input, textarea {
 
 .over-image-text {
     text-transform: uppercase;
-    font-size: 5em;
-    margin-top: auto;
+    font-family: cooper-black-std, serif;
+    font-size: 3.5em;
+    padding-left: 1em;
+    margin-top: 1.5em;
     margin-bottom: auto;
 }
+
+/* .over-image-subtitle {
+    font-family: 'Tw Cen MT', sans-serif;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5em;
+    padding-left: 2.3em;
+    padding-top: 5em;
+} */
 
 .flavours-btn {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
+    padding: 1em 3em 1em 3em;
+    background-color: #fff;
+    border-radius: 100px;
+    color: #626262;
 }
 
 .farms-fruits-quote {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
+    font-family: cooper-black-std, serif;
+    font-size: 2em;
+    padding-right: 2em;
 }
+
+.left {
+    text-transform: uppercase;
+}
+
+.right {
+    text-transform: uppercase;
+}
+
 
 /*------------ End Hero ------------*/
 
@@ -375,7 +404,53 @@ input, textarea {
 
 
 /*-----------footer---------------*/
+
 #footer-section {
     background: #333;
 }
+
+.contact-btn {
+    font-family: 'Tw Cen MT', sans-serif;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 1em 5em 1em 5em;
+    background-color: #626262;
+    border-radius: 100px;
+    color: #fff;
+}
+
 /*-----------End footer---------------*/
+
+
+/*------------ Start Cocktails ------------*/
+
+.more-btn {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 1em 5em 1em 5em;
+    background-color: #626262;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.cocktails {
+    font-family: cooper-black-std, serif;
+    text-align: center;
+}
+
+.cocktails-btn {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 1em 5em 1em 5em;
+    background-color: #626262;
+    border-radius: 100px;
+    color: #fff;
+}
+
+/*------------ End Cocktails ------------*/
