@@ -330,7 +330,6 @@ input, textarea {
 
 .quote-right a {
     color: #000;
-
 }
 
 .contact-item {
@@ -408,7 +407,6 @@ input, textarea {
 }
 
 #more-btn, #cocktails-btn {
-
     display: block;
     width: 160px;
     background-color: #000;
@@ -420,6 +418,7 @@ input, textarea {
     border: none;
     border-radius: 29px;
 }
+
 /* =================Start Buttons =============== */
 
 
