@@ -11,7 +11,7 @@ Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(1px 1px 1px 1px);
 	position: absolute !important;
 	height: 1px;
 	width: 1px;
@@ -24,7 +24,7 @@ Accessibility
 	background-color: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
+	clip-path: auto !important;
 	color: #21759b;
 	display: block;
 	font-size: 14px;
@@ -149,6 +149,15 @@ input, textarea {
         row-gap: 2em;
         column-gap: 2em;
     }
+
+    .four-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }    
 
     .six-items {
         display: grid;
@@ -297,12 +306,16 @@ input, textarea {
 
 }
 
-.quote-left{
+.quote-right{
     background: #fff;
     align-self: center;
     justify-self: start;
-    margin-left: 6em;
-    border-top-right-radius: 25px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 6em;
+    padding: 2em;
+    border-radius: 2em;
 }
 
 .contact-item {
@@ -399,11 +412,11 @@ input, textarea {
     font-size: 1em;
 }
 
-.contact-zap {
+/* .contact-zap {
     position: sticky;
     right: 2em;
     bottom: 2em;
-}
+} */
 
 footer {
     background: #d3d3d3;
@@ -424,12 +437,29 @@ footer nav ul {
     margin-top: 2em;
 }
 
+.mb-4-em{
+    margin-bottom: 4em;
+}
+
+.mt-4-em{
+    margin-top: 4em;
+}
+
 .ml-2-em {
     margin-left: 2em;
 }
 
 .mr-2-em {
     margin-right: 2em;
+}
+
+.center-text {
+ text-align: center;
+}
+
+
+.pull-front {
+    z-index: 999;
 }
 
 #cocktails h2.label {
@@ -460,7 +490,7 @@ footer nav ul {
     top: 20em;
     right: -5%;
     transform: rotate(-90deg);
-    background-color: #FFF;
+    background-color: #E2E5De;
     border-radius: 20px;
     height: 70px;
     width: 261px;
@@ -487,6 +517,39 @@ footer nav ul {
     padding: 13px;
     width: 39px;
     border-radius: 20px 0px 0px 14px;
-    background-color: #fbb5df;
+    background-color: #f5f5f5;
     height: 39px;
   }
+
+
+/*======== Begin story.html ========*/
+#our-story-description {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: #aaa;
+}
+
+#our-story-description p {
+    color: #fff;
+}
+
+#our-product-image {
+    background: #ccc;
+    border-radius: 4em 0 0 4em;
+}
+
+/*======== End story.html ========*/
+
+/*======== Begin contact.html ========*/
+#contact-form {
+    background: #aaa;
+}
+#contact-form input[type=text], #contact-form textarea {
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 3em;
+    border: 1px solid #aaa;
+    width: 40em;
+}
+/*======== End story.html ========*/
