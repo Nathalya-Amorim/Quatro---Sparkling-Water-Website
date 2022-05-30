@@ -11,7 +11,7 @@ Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(1px 1px 1px 1px);
 	position: absolute !important;
 	height: 1px;
 	width: 1px;
@@ -24,8 +24,8 @@ Accessibility
 	background-color: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
+	clip-path: auto !important;
+	color: #626262;
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
@@ -95,18 +95,17 @@ input, textarea {
 
 /*------- Floats --------*/
 
-.f-left {
+.float-left {
     float: left;
 }
 
-.f-right {
+.float-right {
     float: right;
 }
 
 /*------- End Floats --------*/
 
 /* _____________________________________
-
    02. CSS Grid
    _____________________________________ */
 
@@ -127,6 +126,9 @@ input, textarea {
         display: grid;
         grid-column: 2 / span 2;
         grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
     }
 
     .two-items {
@@ -154,7 +156,7 @@ input, textarea {
         justify-content: space-evenly;
         row-gap: 2em;
         column-gap: 2em;
-    }
+    }    
 
     .six-items {
         display: grid;
@@ -163,6 +165,8 @@ input, textarea {
         justify-content: space-evenly;
         row-gap: 2em;
         column-gap: 2em;
+        padding-bottom: 3em;
+        margin-bottom: 3em;
     }
 
     #more-btn {
@@ -170,17 +174,26 @@ input, textarea {
         margin-right: auto;
     }
 
-    .contact-override {
+    /* .contact-override {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
         grid-column: 1 / span 4;
-        background: #f4f4f4;
+        background: #f4f4;
         border-bottom: 1px solid #ccc;
-    }
+    } */
 
     /*------------  End Grid Items ------------*/
 
     /*------------ Start Nav Styling ------------*/
+
+    header {
+        position: sticky;
+        background-color: #fff;
+        top: 0px;
+        border-bottom: 1px solid #e6e6e6;
+        box-shadow: 0px 5px 8px #888;
+        z-index: 9999999;
+    }
 		
 		.nav {
             display: inline;
@@ -195,8 +208,6 @@ input, textarea {
         }
 
 		nav ul {
-			/* margin: 0; */
-			/* padding: 2em 30em .95em; */
 			text-decoration: none;
 			text-align: end;
 		}
@@ -206,50 +217,33 @@ input, textarea {
 			margin-right: 6em;
 		}
 
-		nav ul li:last-child {
+		header nav ul li:last-child {
 			margin-right: 0em;
 		}
 
 		nav ul li a {
 			color: #070707;
-			font-size: 1.25em;
+			font-size: 1.5em;
 		}
 
-		nav ul li a:hover  {
-			padding-bottom: .25em;
-			border-bottom: 3px solid #cccccc;
-		}
-
-	
-		nav ul li a h4 {
-			display: inline;
-			padding: 1.5em 1.5em 1.5em 1.5em;
-			color: #fff;
-			font-size: 1em;
-			transition: background-color 500ms linear;
-		}
-
-		nav ul li a:hover h4 {
-			background-color: #626262;
-			transition: background-color 500ms linear;
-		}
+		/* nav ul li a:hover  {
+			padding-bottom: .5em;
+			border-bottom: 3px solid #070707;
+		} */
 
         .nav ul {
-            /* display: contents; */
             float: left;
         }
 
         .social_Media {
-            /* display: block; */
             float: right;
             text-align: right;
-            margin-right: 2sem;
-            padding-right: 4em;
+            padding-right: 1em;
             padding-bottom: 1em;
         }
 
         .social_Media a {
-            margin: 0px 20px 0 20px;
+            margin: 0 5px 0 5px;
         }
 
 		/*------------ End Nav Styling ------------*/
@@ -260,6 +254,7 @@ input, textarea {
 
 .hero {
     margin: 0;
+    padding-bottom: 3em;
 }
 
 .hero-img img {
@@ -269,7 +264,7 @@ input, textarea {
 .hero-img {
     display: grid;
     grid-column: span 4;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 .hero-img > * {
@@ -284,21 +279,58 @@ input, textarea {
     font-weight: 300;
 }
 
-.hero-img h2 span, .hero-img h3 span {
-    font-size: .65em;
-    color: #9a2018;
-}
 
 .hero-img h2.left, .hero-img h3.left {
     align-self:flex-end;
+    text-transform: uppercase;
     justify-self:start;
     margin-left: 6em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
-.hero-img h2.right, .hero-img h3.right {
+.hero-img h2.right, .hero-img h3.right, .farms-fruits-quote {
     align-self: flex-end;
+    text-transform: uppercase;
     justify-self: end;
     margin-right: 6em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.quote-right{
+    background: #fff;
+    align-self: center;
+    justify-self: end;
+    margin-right: 6em;
+    border-top-right-radius: 25px;
+
+}
+
+.quote-right{
+    background: #fff;
+    align-self: center;
+    justify-self: start;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 6em;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.quote-right h2 {
+    font-family: cooper-black-std, serif;
+    text-align: left;
+}
+
+.quote-right p {
+    text-align: left;
+}
+
+.quote-right a {
+    color: #000;
+
 }
 
 .contact-item {
@@ -307,150 +339,243 @@ input, textarea {
 
 .over-image-text {
     text-transform: uppercase;
+    font-size: 5em;
     font-family: cooper-black-std, serif;
-    font-size: 3.5em;
-    padding-left: 1em;
-    margin-top: 1.5em;
-    margin-bottom: auto;
-}
-
-/* .over-image-subtitle {
-    font-family: 'Tw Cen MT', sans-serif;
-    text-transform: uppercase;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 1.5em;
-    padding-left: 2.3em;
-    padding-top: 5em;
-} */
+}
 
 .flavours-btn {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
-    padding: 1em 3em 1em 3em;
-    background-color: #fff;
-    border-radius: 100px;
-    color: #626262;
+}
+
+.flavours-btn {
+        display: block;
+        width: 160px;
+        background-color: #000;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 29px;
 }
 
 .farms-fruits-quote {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    font-family: cooper-black-std, serif;
-    font-size: 2em;
-    padding-right: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
-.left {
-    text-transform: uppercase;
+.border-top-bottom{
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding-top: 45px;
 }
 
-.right {
-    text-transform: uppercase;
+.bckgd-color {
+    background: #e6e6e6;
+    padding-bottom: 5em;
+    padding-top: 3em;
 }
-
 
 /*------------ End Hero ------------*/
 
-/*------------ Start Why ------------*/
-
-.why {
-    margin-bottom: 3em;
+/* =================Start Buttons =============== */
+.standard-button {
+    display: block;
+    width: 160px;
+    /* background-color: #000; */
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    /* color: #fff; */
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
 }
 
-.why-nav ul {
-    text-align: start;
-    padding: 2em 0;
+.standard-button.black-button {
+    background: #000;
+    color: #FFF;
 }
 
-.why-us-img {
-    display: grid;
-    grid-column: span 1;
+.standard-button.white-button {
+    background: #FFF;
+    color: #000;
 }
 
-.why-us-img img {
-    width: 100%;
-}
+#more-btn, #cocktails-btn {
 
-.why-us-img > * {
-    grid-column: 1;
-    grid-row: 1;
+    display: block;
+    width: 160px;
+    background-color: #000;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
 }
-
-.why-us-img h4 {
-    font-size: .9em;
-    font-weight: 700;
-    padding: 1em;
-}
-
-.why-us-img p {
-    font-size: .7em;
-    padding: 0em 1.15em;
-}
-
-.why-us-img a {
-    color: inherit;
-}
-
-.why-us-img a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/*------------End Why ------------*/
+/* =================Start Buttons =============== */
 
 
 /*-----------footer---------------*/
-
-#footer-section {
-    background: #333;
+#footer-section ul li a {
+    font-size: 1em;
 }
 
-.contact-btn {
-    font-family: 'Tw Cen MT', sans-serif;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    padding: 1em 5em 1em 5em;
-    background-color: #626262;
-    border-radius: 100px;
-    color: #fff;
+/* .contact-zap {
+    position: sticky;
+    right: 2em;
+    bottom: 2em;
+} */
+
+footer {
+    background: #d3d3d3;
+}
+
+footer nav ul {
+    text-align: start;
+}
+
+.social-media-footer ul {
+    list-style-type: none;
+}
+
+.social-media-footer ul li {
+    padding-bottom: 1.5em;
 }
 
 /*-----------End footer---------------*/
 
 
-/*------------ Start Cocktails ------------*/
-
-.more-btn {
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
+.mb-2-em{
     margin-bottom: 2em;
-    padding: 1em 5em 1em 5em;
-    background-color: #626262;
-    border-radius: 100px;
-    color: #fff;
 }
 
-.cocktails {
-    font-family: cooper-black-std, serif;
+.mt-2-em{
+    margin-top: 2em;
+}
+
+.mb-4-em{
+    margin-bottom: 4em;
+}
+
+.mt-4-em{
+    margin-top: 4em;
+}
+
+.ml-2-em {
+    margin-left: 2em;
+}
+
+.mr-2-em {
+    margin-right: 2em;
+}
+
+.center-text {
+ text-align: center;
+}
+
+
+.pull-front {
+    z-index: 999;
+}
+
+#cocktails h2.label {
+    align-self: center;
+    justify-self: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#cocktails h2 {
+    background: #fff;
+    padding: 1em 1.75em;
+    font-size: 1.5em;
+    font-weight: 300;
+    z-index: 1;
+    margin-top: -3em;
+    position: relative;
     text-align: center;
 }
 
-.cocktails-btn {
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    padding: 1em 5em 1em 5em;
+#cocktails img {
+    z-index: 0;
+    position: relative;
+}
+
+.subscribe {
+    position: fixed;
+    top: 20em;
+    right: -5%;
+    transform: rotate(-90deg);
     background-color: #626262;
-    border-radius: 100px;
+    border-radius: 20px;
+    height: 70px;
+    width: 261px;
+    border-radius: 21px 21px 0 0;
+    min-width: 200px;
+}
+
+
+.rotate h2 {
+    font-weight: bold;
+    padding: 17px 33px 61px 16px;
+    color: #fff;
+    padding: 6px;
+    margin: 10px;
+}
+
+.subscribe .rotate {
+    display: inline-flex;
+   
+}
+
+.rotate img {
+    transform: rotate(90deg);
+    padding: 13px;
+    width: 39px;
+    border-radius: 20px 0px 0px 14px;
+    background-color: #f5f5f5;
+    height: 39px;
+  }
+
+
+/*======== Begin story.html ========*/
+
+#our-story-description {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: #aaa;
+}
+
+#our-story-description p {
     color: #fff;
 }
 
-/*------------ End Cocktails ------------*/
+#our-product-image {
+    background: #ccc;
+    border-radius: 4em 0 0 4em;
+}
+
+/*======== End story.html ========*/
+
+/*======== Begin contact.html ========*/
+
+#contact-form {
+    background: #aaa;
+}
+#contact-form input[type=text], #contact-form textarea {
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 3em;
+    border: 1px solid #aaa;
+    width: 40em;
+}
+/*======== End story.html ========*/
