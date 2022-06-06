@@ -1,19 +1,25 @@
-# FINAL INTEGRATED PROJECT - Summer Term
-This is a Final Integrated Project for the Interactive Media Design course at Fanshawe College. Students are encouraged to work with a partner. 
-Each group/individual will pick one defunct brand to rebrand it to modern day design standards; Relaunch the brand as part of a new marketing campaign.
-The brand of our project will be the "Quatro" brand.
+# Quatro Fruit | Sparkling Water
+This project is about the rebranding of the Quatro brand.
+
+Brief history: "Quatro" was a fruit-flavored canned carbonated drink produced from 1982 to 1989 in the United Kingdom.
+
+Our project involves marketing strategy, creation, and development for the new Quatro Fruit brand; design and definition of the new visual identity, positioning, advertising, and the construction of a new website for the company.
 
 ========================================================================
 
-## REQUIREMENTS
-The brand must have a set of branded/advertising/marketing products. These will include the following:
+## Project
+- Functional responsive website with some dynamic content (HTML/CSS/JS/Image files, etc,). 
+- High resolution prototype of your mobile and desktop XD flat designs.
+- Brand document /style guide
+- Infographic commercial (.mp4)
+- Mock-up of the packaging and package template (PDF)
+- All original photography, artwork and graphic design assets
 
-1. A fully functional responsive website with some dynamic content (HTML/CSS/JS/Image files, etc,). This will need to be maintained using Git for version control and uploaded to GitHub by you. Include the web-ready assets via Github link as part of your submission for this course.
-2. A fully functional high resolution prototype of your mobile and desktop XD flat designs.
-3. A brand document /style guide (PDF)
-4. An infographic commercial (.mp4)
-5. A mock-up of the packaging and package template (PDF)
-6. All original photography, artwork and graphic design assets
+========================================================================
+
+## Authors
+• Nathalya Menezes 
+• Tallyta Triolo
 
 ========================================================================
 
@@ -23,7 +29,7 @@ No need to install it.
 ========================================================================
 
 ## USAGE
-This Final Integrated Project - Summer Term has been done for IDP course at Fanshawe College. You can use our project only for research and for ideas and inspiration.
+You can use our project only for research and for ideas and inspiration.
 
 ========================================================================
 
