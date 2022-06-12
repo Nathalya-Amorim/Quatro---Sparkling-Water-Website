@@ -20,7 +20,20 @@
         <div class="logo">
             <img src="assets/logo_imageplaceholder.svg" width="200" height="100" alt="Quatro Logo">
         </div>
-        <nav class="nav" aria-label="Main Navigation">
+        <div class="mobile">
+            <input type="checkbox" id="overlay-input"/>
+            <label for="overlay-input" id="overlay-button"><span></span></label>
+            <div id="overlay">
+                <ul>
+                    <li><a class="#" href="index.html#about">Home</a></li>
+                    <li><a href="./story.html">Story</a></li>
+                    <li><a href="#">Flavours </a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>        
+        <nav class="nav full" aria-label="Main Navigation">
             <h2 class="hidden">Main Navigation</h2>
             <ul id="menu-list">
                 <li><a class="#" href="index.html#about">Home</a></li>
@@ -47,7 +60,11 @@
         <section class="hero">
 
             <div class="hero-img">
-                <img src="https://via.placeholder.com/1920x740" alt="Placeholder image">
+                <picture>
+                    <source media="(min-width:740px)" srcset="https://via.placeholder.com/1920x740">
+                    <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                    <img src="https://via.placeholder.com/250x250" alt="Placeholder image">
+                </picture>
                 <h2 class="left"> Made With Real Fruit</h2>
                 <p class="over-image-text ml-2-em">Quatro<br>Fruit<br>Sparkling<br>Water</p>
             </div>
@@ -64,7 +81,11 @@
         <section class="hero">
             <div class="hero-img">
                 <h2 class="hidden">Discover all flavours</h2>
-                <img src="https://via.placeholder.com/1920x740" alt="All Flavours">
+                <picture>
+                    <source media="(min-width:740px)" srcset="https://via.placeholder.com/1920x740">
+                    <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                    <img src="https://via.placeholder.com/250x250" alt="All Flavours">                    
+                </picture>
                 <a href="#" class="flavours-btn mb-2-em">ALL FLAVOURS</a>
             </div>
         </section>
@@ -73,16 +94,17 @@
             <div class="hero-img">
                 <h2 class="right pull-front">MADE BY REAL PEOPLE</h2>
                 <h3 class="hidden">Our Farmers</h3>
-                <img src="https://via.placeholder.com/1920x740" alt="Our Farmers">
-
+                <picture>
+                    <source media="(min-width:740px)" srcset="https://via.placeholder.com/1920x740" >
+                    <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                    <img src="https://via.placeholder.com/250x250" alt="Our Farmers">                    
+                </picture>
                 <div class="quote-right">
                     <h2>Our farmers,<br>Our fruits.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Quam neque aliquid, fuga, nobis, minus
-                        debitis officiis<br> nulla aspernatur magnam doloribus ad culpa error facilis?<br> Consectetur ut qui
+                        debitis officiis<br> nulla aspernatur magnam doloribus ad culpa error facilis?<br> Consectetur ut qui</p>
                     <a href="#">Learn more...</a>
                 </div>
-
-                
             </div>
         </section>
 
@@ -90,27 +112,45 @@
             <h2 class="hidden">Our Flavors</h2>
             <div class="six-items border-top-bottom">
                 <div>
-                    <img src="https://via.placeholder.com/430x430" alt="Flavour 1">
+                    <picture>
+                        <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                        <img src="https://via.placeholder.com/250x250" alt="Flavour 1">
+                    </picture>                        
                 </div>
 
                 <div>
-                    <img src="https://via.placeholder.com/430x430" alt="Flavour 2">
+                    <picture>
+                        <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                        <img src="https://via.placeholder.com/250x250" alt="Flavour 2">
+                    </picture>                        
                 </div>
 
                 <div>
-                    <img src="https://via.placeholder.com/430x430" alt="Flavour 3">
+                    <picture>
+                        <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                        <img src="https://via.placeholder.com/250x250" alt="Flavour 3">
+                    </picture>                        
                 </div>
 
                 <div>
-                    <img src="https://via.placeholder.com/430x430" alt="Flavour 4">
+                    <picture>
+                        <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                        <img src="https://via.placeholder.com/250x250" alt="Flavour 4">
+                    </picture>                        
                 </div>
 
                 <div>
-                    <img src="https://via.placeholder.com/430x430" alt="Flavour 5">
+                    <picture>
+                        <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                        <img src="https://via.placeholder.com/250x250" alt="Flavour 5">
+                    </picture>                        
                 </div>
 
                 <div>
-                    <img src="https://via.placeholder.com/430x430" alt="Flavour 6">
+                    <picture>
+                        <source media="(min-width:480px)" srcset="https://via.placeholder.com/480x480">
+                        <img src="https://via.placeholder.com/250x250" alt="Flavour 6">
+                    </picture>                        
                 </div>
             </div>
 
@@ -139,8 +179,8 @@
 
                 <!-- Cocktail 03 Starts here -->
                 <div>
-                    <img src="https://via.placeholder.com/458x510" alt="Pinã Colada Cocktail">
-                    <h2 class="label">PINĀ COLADA</h2>
+                    <img src="https://via.placeholder.com/458x510" alt="Cosmopolitan Cocktail">
+                    <h2 class="label">COSMOPOLITAN</h2>
                 </div>
                 <!-- Cocktail 03 End here -->
             </div>
@@ -152,24 +192,19 @@
 
     <footer class="mt-2-em">
         <section id="footer-section">
-            <div class="two-items">
+            <div class="two-items">                
                 <div class="ml-2-em mt-2-em">
+                    <img src="assets/logo_imageplaceholder.svg" class="full-logo" height="100" width="200" alt="Quatro Logo">
                     <h2 class="hidden">Bottom Navigation</h2>
                     <p> Join us, for perks, prizes and more</p>
                     <form>
-                        <label for="e-mail">*Email:</label>
-                        <input id="e-mail" type="email">
-
-                        <input type="submit" value="SUBMIT">
-
+                        <label for="e-mail" class="float-left">*Email:</label>
+                        <input id="e-mail" type="email" class="float-left input-text">
+                        <input type="submit" value="SUBMIT" class="float-left standard-button black-button">
                     </form>
-
-                    <img src="assets/logo_imageplaceholder.svg" width="200" height="100" alt="Quatro Logo">
-
-
                 </div>
                 <div class="two-items">
-                    <div class="mt-2-em">
+                    <div class="mt-2-em full-footer">
                         <nav aria-label="Bottom Navigation">
                             <h3 class="hidden" id="bttm-nvgtn"> Bottom Navigation</h3>
                             <ul class="one-item">
@@ -194,10 +229,19 @@
                             <li id="twIcon"><a href="https://www.twitter.com"><img src="img/twt-icon.svg" alt="Twitter Logo" width="30" height="30"></a></li>
                         </ul>
                     </div>
+                    <div class="one-item mt-2-em social-media-footer-mobile">
+                        <h3 class="hidden">Social Media</h3>
+                        <ul>
+                            <li id="fbIconM"><a href="https://www.facebook.com"><img src="img/fb-icon.svg" alt="Facebook Logo" width="30" height="30"></a></li>
+                            <li id="igIconM"><a href="https://www.instagram.com"><img src="img/ig-icon.svg" alt="Instagram Logo" width="30" height="30"></a></li>
+                            <li id="ptIconM"><a href="https://www.pinterest.com"><img src="img/pt-icon.svg" alt="Pinterest Logo" width="30" height="30"></a></li>
+                            <li id="twIconM"><a href="https://www.twitter.com"><img src="img/twt-icon.svg" alt="Twitter Logo" width="30" height="30"></a></li>
+                        </ul>
+                    </div>                    
                 </div>
             </div>
             <div class="one-item">
-                <div class="ml-2-em">
+                <div class="ml-2-em mb-2-em">
                     <p>©2022 Quatro.All Rights Reserved.</p>
                     <p> Website Made by Nathálya Menezes and Tallyta Triollo</p>
                 </div>
