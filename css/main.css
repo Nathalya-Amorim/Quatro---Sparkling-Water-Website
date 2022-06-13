@@ -6,6 +6,29 @@ Version: 1.0
 Tags: GRID, Build, Be Awesome
 */
 
+/* _________________Table of Content____________________
+   01. Accessibility
+   02. Reset
+   03. Floats
+   04. Font Awesome
+   05. Mobile Padding
+   06. Start Mobile
+   07. Mobile Grid Items
+   08. Mobile Site Header
+   09. Nav Show/Hide Mobile
+   10. Mobile Nav Overlay Menu
+   11. Mobile Footer
+   12. Our Story - Mobile
+   13.Contact Mobile
+   14. Grid Items
+   15. Nav Styling
+   16. Story Nav - Desktop
+   17. Hero
+   18. Buttons
+   19. Footer -Desktop
+
+   _____________________________________ */
+
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
@@ -118,13 +141,17 @@ input[type=email]{
 }
 
 /*------- End Floats --------*/
-   /*------- Font Awesome -------*/
+
+
+/*------- Font Awesome -------*/
 
    .fas {
     display: none;
 }
 
 /*------- End Font Awesome -------*/
+
+
 
 /*------- Mobile Padding ---------*/
 
@@ -167,6 +194,15 @@ input[type=email]{
 .three-items {
     display: grid;
     grid-column: 1 / span 2;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.four-items {
+    display: grid;
+    grid-column: 2 / span 2;
     grid-template-columns: repeat(1, 1fr);
     justify-content: space-evenly;
     row-gap: 2em;
@@ -219,7 +255,8 @@ header {
 }
 
 /*------------  End Mobile Site header ------------*/
-	/*------------  Start Mobile Site header ------------*/
+
+/*------------  Start Mobile Site header ------------*/
 
 	header {
 		position: sticky;
@@ -405,13 +442,172 @@ header {
         display: inline;
         margin: 0 1em 0 1em;
     }
-    /*------------- End mobile footer ------*/
-}
-/* _____________________________________
-   01. CSS Grid
-   02.Start Nav Styling 
 
-   _____________________________________ */
+    .join-us {
+        grid-column: 1/3;
+    }
+
+    .join-us input[type=submit] {
+        margin-left: -2em;
+    } 
+    /*------------- End mobile footer ------*/
+
+    /*------------- Start Our Story Mobile  ------*/
+    #our-story-description {
+        padding: 4em 2em 4em 2em;
+        background: #aaa;
+        display: none;
+    }
+
+    #our-story-description p {
+        color: #fff;
+    }
+
+    #our-product-image img {
+        background: #ccc;
+        border-radius: 4em 0 0 4em;
+        display: none;
+    }
+
+    #our-product {
+        display:none;
+    }
+
+    #our-story-mobile {
+        display: block;
+    }
+
+    #our-story-mobile section {
+        padding:2em ;
+    }
+
+    /*------------- End Our Story Mobile  ------*/
+
+     /*======== Begin Contact Mobile ========*/
+
+     #contact-form {
+        background: #aaa;
+    }
+
+    #contact-form input[type=text],
+    #contact-form textarea {
+        margin: auto;
+        margin-bottom: 2em;
+        padding: 2em;
+        border-radius: 3em;
+        border: 1px solid #aaa;
+        width: 20em;
+    }
+
+    /*======== End Contact Mobile ========*/
+
+
+
+   /* --------------------- Start Hero Mobile------------------ */
+
+         
+
+   .hero {
+    margin: 0;
+    padding-bottom: 3em;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.hero-img {
+    display: grid;
+    grid-column: span 4;
+    margin-bottom: 0em;
+}
+
+.hero-img>* {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hero-img h2,
+.hero-img h3 {
+    background: #fff;
+    padding: 1em 1.75em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+
+.hero-img h2.left,
+.hero-img h3.left {
+    align-self: flex-end;
+    text-transform: uppercase;
+    justify-self: start;
+    margin-left: 2em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.hero-img h2.right,
+.hero-img h3.right,
+.farms-fruits-quote {
+    align-self: flex-end;
+    text-transform: uppercase;
+    justify-self: end;
+    margin-right: 2em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+.quote-right {
+    background: #fff;
+    align-self: center;
+    justify-self: end;
+    margin-right: 6em;
+    border-top-right-radius: 25px;
+
+}
+
+.contact-item {
+    padding: 2em;
+}
+
+.flavours-btn {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flavours-btn {
+    display: block;
+    width: 160px;
+    background-color: #000;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 29px;
+}
+
+.farms-fruits-quote {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.bckgd-color {
+    background: #e6e6e6;
+    padding-bottom: 5em;
+    padding-top: 3em;
+}
+/* --------------------- End Hero Mobile------------------ */
+
+
+}
 
 @supports (grid-area: auto) {
 
@@ -484,13 +680,6 @@ header {
             margin-right: auto;
         }
 
-        /* .contact-override {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
-        grid-column: 1 / span 4;
-        background: #f4f4;
-        border-bottom: 1px solid #ccc;
-    } */
 
         /*------------  End Grid Items ------------*/
 
@@ -528,6 +717,11 @@ header {
         nav ul li {
             display: inline;
             margin-right: 6em;
+        }
+
+        nav .social_Media ul li {
+            display: inline;
+            margin-right: 2em;
         }
 
         header nav ul li:last-child {
@@ -597,7 +791,7 @@ header {
         .subscribe {
             position: fixed;
             top: 20em;
-            right: -5%;
+            right: -100px;
             transform: rotate(-90deg);
             background-color: #626262;
             border-radius: 20px;
@@ -635,44 +829,56 @@ header {
             display: block;
         }
 
+
         /*------------ End Nav Styling ------------*/
 
         .social-media-footer-mobile {
             display: none;
         }
 
-    }
+        /*======== Begin story.html ========*/
 
-    /*------------ Start Hero ------------*/
+        #our-story-description {
+            padding-top: 4em;
+            padding-bottom: 4em;
+        }
 
-    .hero {
-        margin: 0;
-        padding-bottom: 3em;
-    }
+        #our-story-description p {
+            color: #fff;
+        }
 
-    .hero-img img {
-        width: 100%;
-    }
+        #our-product-image {
+            background: #ccc;
+            border-radius: 4em 0 0 4em;
+        }
 
-    .hero-img {
-        display: grid;
-        grid-column: span 4;
-        margin-bottom: 0em;
-    }
+        #our-product-image img{
+            display: block;
+        }
 
-    .hero-img>* {
-        grid-column: 1;
-        grid-row: 1;
-    }
+        #mobile-story {
+            display: none;
+        }
 
-    .hero-img h2,
-    .hero-img h3 {
-        background: #fff;
-        padding: 1em 1.75em;
-        font-size: 1.5em;
-        font-weight: 300;
-    }
+        #our-product {
+            display: block;
+        }
 
+
+
+        /*======== End story.html ========*/   
+        
+        #contact-form input[type=text],
+        #contact-form textarea {
+            margin: auto;
+            margin-bottom: 2em;
+            padding: 2em;
+            border-radius: 3em;
+            border: 1px solid #aaa;
+            width: 40em;
+        }
+    
+        /* ---------------------Hero Desktop------------------ */
 
     .hero-img h2.left,
     .hero-img h3.left {
@@ -682,6 +888,8 @@ header {
         margin-left: 6em;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
+        letter-spacing: 3px;
+
     }
 
     .hero-img h2.right,
@@ -693,52 +901,32 @@ header {
         margin-right: 6em;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
+        letter-spacing: 3px;
+        /*------------ End Hero ------------*/
     }
 
-    .quote-right {
+    /* Cocktails  */
+
+    #cocktails h2 {
         background: #fff;
-        align-self: center;
-        justify-self: end;
-        margin-right: 6em;
-        border-top-right-radius: 25px;
-
-    }
-
-    .contact-item {
-        padding: 2em;
-    }
-
-    .flavours-btn {
-        margin-top: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .flavours-btn {
-        display: block;
-        width: 160px;
-        background-color: #000;
-        padding: 15px;
+        padding: 1em 1.75em;
+        font-size: 1.5em;
+        font-weight: 300;
+        z-index: 1;
+        margin-top: -3em;
+        position: relative;
         text-align: center;
-        color: #fff;
-        text-decoration: none;
-        border: none;
-        border-radius: 29px;
     }
 
-    .farms-fruits-quote {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0;
+    .cocktail-card {
+        margin: auto;
     }
 
-    .bckgd-color {
-        background: #e6e6e6;
-        padding-bottom: 5em;
-        padding-top: 3em;
+    .join-us {
+        grid-column: 1/2 !important;
     }
 
-    /*------------ End Hero ------------*/
+    }
 
     /* =================Start Buttons =============== */
     .standard-button {
@@ -810,6 +998,9 @@ header {
 
     /*-----------End footer---------------*/
 
+    .ma-1-em {
+        margin: 1em;
+    }
 
     .mb-2-em {
         margin-bottom: 2em;
@@ -854,17 +1045,26 @@ header {
     #cocktails h2 {
         background: #fff;
         padding: 1em 1.75em;
-        font-size: 1.5em;
+        font-size: 1.0em;
         font-weight: 300;
         z-index: 1;
-        margin-top: -3em;
+        margin-top: -3.3em;
         position: relative;
         text-align: center;
+        margin-right: 1.3em;
+        margin-left: 1em;
+        font-size: 18px;
+        letter-spacing: 3px;
     }
 
-    #cocktails img {
+   
+    #cocktails picture {
         z-index: 0;
         position: relative;
+    }
+
+    .cocktail-card {
+        margin: auto;
     }
 
     .rotate h2 {
@@ -875,41 +1075,5 @@ header {
         margin: 10px;
     }
 
-    /*======== Begin story.html ========*/
-
-    #our-story-description {
-        padding-top: 4em;
-        padding-bottom: 4em;
-        background: #aaa;
-    }
-
-    #our-story-description p {
-        color: #fff;
-    }
-
-    #our-product-image {
-        background: #ccc;
-        border-radius: 4em 0 0 4em;
-    }
-
-    /*======== End story.html ========*/
-
-    /*======== Begin contact.html ========*/
-
-    #contact-form {
-        background: #aaa;
-    }
-
-    #contact-form input[type=text],
-    #contact-form textarea {
-        margin: auto;
-        margin-bottom: 2em;
-        padding: 2em;
-        border-radius: 3em;
-        border: 1px solid #aaa;
-        width: 40em;
-    }
-
-    /*======== End story.html ========*/
 
 }
