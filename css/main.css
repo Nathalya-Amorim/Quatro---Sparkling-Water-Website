@@ -70,7 +70,7 @@ Accessibility
 body {
     margin: 0;
     padding: 0;
-    color: #626262;
+    color: #F5F5F5;
     font-family: 'Tw Cen MT', sans-serif;
     font-size: 16px;
 }
@@ -529,12 +529,11 @@ header {
 
 .hero-img h2,
 .hero-img h3 {
-    background: #fff;
+    background:#DC4A69;
     padding: 1em 1.75em;
     font-size: 1.5em;
     font-weight: 300;
 }
-
 
 .hero-img h2.left,
 .hero-img h3.left {
@@ -547,6 +546,12 @@ header {
     font-size: 18px;
     letter-spacing: 3px;
 }
+
+.greenColor {
+    background-color: #A7CC5B !important;
+}
+
+
 
 .hero-img h2.right,
 .hero-img h3.right,
@@ -584,7 +589,7 @@ header {
 .flavours-btn {
     display: block;
     width: 160px;
-    background-color: #000;
+    background-color: #6BC3E3;
     padding: 15px;
     text-align: center;
     color: #fff;
@@ -600,7 +605,7 @@ header {
 }
 
 .bckgd-color {
-    background: #e6e6e6;
+    background: #E37939;
     padding-bottom: 5em;
     padding-top: 3em;
 }
@@ -729,7 +734,7 @@ header {
         }
 
         nav ul li a {
-            color: #070707;
+            color: #DC4A69;
             font-size: 1.5em;
         }
 
@@ -752,7 +757,7 @@ header {
         }
         
         .quote-right {
-            background: #fff;
+            background: #A7CC5B;
             align-self: center;
             justify-self: start;
             margin-left: auto;
@@ -793,7 +798,7 @@ header {
             top: 20em;
             right: -100px;
             transform: rotate(-90deg);
-            background-color: #626262;
+            background-color: #E37939;
             border-radius: 20px;
             height: 70px;
             width: 261px;
@@ -816,13 +821,17 @@ header {
         }
         
         .border-top-bottom {
-            border-top: 3px solid #000;
-            border-bottom: 3px solid #000;
+            border-top: 3px solid #F2CA56;
+            border-bottom: 3px solid #F2CA56;
             padding-top: 45px;
         }   
         
         .full-footer {
             display: block;
+        }
+
+        .full-footer a {
+            color: #f5f5f5;
         }
 
         .full-logo {
@@ -981,7 +990,7 @@ header {
 } */
 
     footer {
-        background: #d3d3d3;
+        background: #6BC3E3;
     }
 
     footer nav ul {
@@ -1040,6 +1049,7 @@ header {
         justify-self: center;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
+        background-color: #F2CA56;
     }
 
     #cocktails h2 {
