@@ -738,10 +738,27 @@ header {
             font-size: 1.5em;
         }
 
+        /* Nav Discuss about it */
         /* nav ul li a:hover  {
 			padding-bottom: .5em;
-			border-bottom: 3px solid #070707;
+			border-bottom: 3px solid #DC4A69;
 		} */
+
+    
+        .navMenu ul li a {
+            color: #DC4A69;
+            display: inline-block;
+           
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+          
+          .navMenu  ul li a:hover {
+            color: #E37939;
+          }
+          
+
+        /* end test */
 
         .nav ul {
             float: left;
