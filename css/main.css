@@ -76,7 +76,7 @@ body {
 }
 
 #errorBckgrnd {
-    background-color: #CC5577;
+    background-color: #db434a;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg fill-opacity='0.11'%3E%3Crect fill='%23CC5577' width='11' height='11'/%3E%3Crect fill='%23cf5676' x='10' width='11' height='11'/%3E%3Crect fill='%23d25775' y='10' width='11' height='11'/%3E%3Crect fill='%23d55974' x='20' width='11' height='11'/%3E%3Crect fill='%23d85a73' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23db5b72' y='20' width='11' height='11'/%3E%3Crect fill='%23dd5d71' x='30' width='11' height='11'/%3E%3Crect fill='%23e05e70' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23e3606f' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23e5626d' y='30' width='11' height='11'/%3E%3Crect fill='%23e8646c' x='40' width='11' height='11'/%3E%3Crect fill='%23ea656b' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23ec6769' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23ef6968' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23f16b66' y='40' width='11' height='11'/%3E%3Crect fill='%23f36d65' x='50' width='11' height='11'/%3E%3Crect fill='%23f56f63' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23f77262' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23f87460' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23fa765f' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23fc795d' y='50' width='11' height='11'/%3E%3Crect fill='%23fd7b5b' x='60' width='11' height='11'/%3E%3Crect fill='%23ff7e5a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23ff8058' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23ff8356' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23ff8555' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23ff8853' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23ff8b51' x='70' width='11' height='11'/%3E%3Crect fill='%23ff8d4f' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23ff904e' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23ff934c' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23ff964a' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23ff9948' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23ff9c46' x='80' width='11' height='11'/%3E%3Crect fill='%23ff9f45' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23ffa243' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23ffa541' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23ffa840' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23ffab3e' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ffae3c' x='90' width='11' height='11'/%3E%3Crect fill='%23ffb13b' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23ffb439' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ffb838' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23ffbb36' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ffbe35' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ffc134' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ffc433' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ffc732' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ffcb31' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ffce30' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23fed130' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23fdd430' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23fbd730' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23fadb30' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23f8de30' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23f6e131' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23f4e432' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23f2e834' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23efeb35' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EDEE37' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
@@ -397,7 +397,7 @@ header {
 		  #overlay {
 			height: 100vh;
 			width: 100vw;
-			background: #DC4A69;
+			background: #db434a;
 			z-index: 2;
 			visibility: hidden;
 			position: absolute;
@@ -495,7 +495,7 @@ header {
     }
 
      #our-product h2{
-        color: #F2CA56 ;
+        color: #e9cb4a ;
 
     }
 
@@ -506,15 +506,15 @@ header {
     }
 
     #teamate-one p {
-        color: #DC4A69;
+        color: #db434a;
     }
 
     #teamate-two h3 {
-        color: #DC4A69;
+        color: #db434a;
     }
 
     #colorPink h2 {
-        color: #DC4A69;
+        color: #db434a;
     }
 
     
@@ -525,7 +525,7 @@ header {
 
      #contact-form {
         background: #aaa;
-        color: #DC4A69;
+        color: #db434a;
     }
 
     #contact-form input[type=text],
@@ -536,7 +536,7 @@ header {
         border-radius: 3em;
         border: 1px solid #aaa;
         width: 20em;
-        color: #DC4A69;
+        color: #db434a;
     }
 
     /*======== End Contact Mobile ========*/
@@ -569,7 +569,7 @@ header {
 
 .hero-img h2,
 .hero-img h3 {
-    background:#DC4A69;
+    background: #e37a3b;
     padding: 1em 1.75em;
     font-size: 1.5em;
     font-weight: 300;
@@ -588,7 +588,7 @@ header {
 }
 
 .greenColor {
-    background-color: #A7CC5B !important;
+    background-color: #a9c954 !important;
 }
 
 
@@ -645,7 +645,7 @@ header {
 }
 
 .bckgd-color {
-    background: #E37939;
+    background: #e37a3b;
     padding-bottom: 5em;
     padding-top: 3em;
 }
@@ -785,7 +785,7 @@ header {
             background-color: #fff;
             top: 0px;
             border-bottom: 1px solid #e6e6e6;
-            box-shadow: 0px 5px 8px #888;
+            box-shadow: 0px 5px 8px #db434b73;
             z-index: 9999999;
         }
 
@@ -821,14 +821,14 @@ header {
         }
 
         nav ul li a {
-            color: #DC4A69;
+            color: #db434a;
             font-size: 1.5em;
         }
 
         
         nav ul li a:hover  {
 			padding-bottom: .5em;
-			border-bottom: 3px solid #DC4A69;
+			border-bottom: 3px solid #db434a;
 		}
 
 
@@ -846,7 +846,7 @@ header {
         }
         
         .quote-right {
-            background: #A7CC5B;
+            background: #a9c954;
             align-self: center;
             justify-self: start;
             margin-left: auto;
@@ -888,7 +888,7 @@ header {
             top: 20em;
             right: -100px;
             transform: rotate(-90deg);
-            background-color: #E37939;
+            background-color: #e37a3b;
             border-radius: 20px;
             height: 70px;
             width: 261px;
@@ -915,8 +915,8 @@ header {
         }
         
         .border-top-bottom {
-            border-top: 3px solid #F2CA56;
-            border-bottom: 3px solid #F2CA56;
+            border-top: 3px solid #e9cb4a;
+            border-bottom: 3px solid #e9cb4a;
             padding-top: 45px;
         }   
         
@@ -1084,17 +1084,17 @@ header {
         text-decoration: none;
         border: none;
         border-radius: 29px;
-        background-color: #DC4A69;
+        background-color: #db434a;
         color:#f5f5f5
     }
 
     .standard-button.black-button {
-        background: #DC4A69;
+        background: #db434a;
         color: #FFF;
     }
 
     .standard-button.white-button {
-        background: #DC4A69;
+        background: #db434a;
         color: #F5F5F5;
     }
 
@@ -1185,7 +1185,7 @@ header {
         justify-self: center;
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
-        background-color: #F2CA56;
+        background-color: #e9cb49;
     }
 
     #cocktails h2 {
@@ -1243,7 +1243,7 @@ header {
     position: absolute;
     top: 0;
     font-size: 14px;
-    background: #DC4A69;
+    background: #db434a;
     color: #FFF;
     padding: 5px 8px;
     border-radius: 5px;
