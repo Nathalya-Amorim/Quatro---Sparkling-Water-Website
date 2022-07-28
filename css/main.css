@@ -108,6 +108,7 @@ input[type=email]{
     border: none;
     padding-left: 25px;
     padding-top: 5px;
+    color:#6BC3E3
 }
 
 .hidden {
@@ -426,12 +427,12 @@ header {
 			padding: .75em;
 		  }
 		  #overlay ul li a {
-			color: white;
+			color: #F5F5F5;
 			text-decoration: none;
 			font-size: 1.25em;
 		  }
 		  #overlay ul li a:hover {
-			color: #333332;
+			color: #a9c954;
 		  }
 
 	/*------------ End Mobile Nav ------------*/
@@ -471,24 +472,26 @@ header {
     #our-story-description {
         padding: 4em 2em 4em 2em;
         background: #fff;
-        display: none;
+        display: block;
     }
 
     #our-story-description p {
         color: #e37a3b;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #our-story-description h2 {
         color: #db434a;
         font-family: cooper-black-std, serif;
-        font-size: 2.5em;
+        font-size:1.5em;
     }
 
     #our-product-image img {
-        background: #ccc;
-        border-radius: 4em 0 0 4em;
-        display: none;
+        border-radius: 20px;
+        display: block;
+        width: 80%;
+        padding-top: 30px;
+        padding-right: 60px;
     }
 
     #our-product {
@@ -496,18 +499,30 @@ header {
         
     }
 
-    #our-story-mobile {
-        display: block;
+    #our-product h2 {
+        color:#e9cb49
     }
 
-    #our-story-mobile section {
+    .our-story-mobile-story {
+        display: block;
+        color: #db434a;
+    }
+
+    .our-story-mobile {
+        display: block;
+        color:#626262;
+    }
+    .our-story-mobile section {
         padding:2em ;
     }
 
      #our-product h2{
         color: #e9cb4a ;
+        font-size: 1.5em;
 
     }
+
+   
 
     #our-product p {
         color: #595959;
@@ -525,6 +540,10 @@ header {
 
     #colorPink h2 {
         color: #db434a;
+    }
+
+    #colorPink span {
+        font-weight: 300; 
     }
 
     
@@ -556,14 +575,66 @@ header {
     }
 
     /*======== End Contact Mobile ========*/
+/* --------------------- End Mobile 404 Error Page------------------ */
 
+/* Start SVG Animation */
+
+.frontPosition {
+    position: relative;
+}
+
+#orange_logo {
+    display: none;
+}
+
+#pink_logo {
+    display: none;
+}
+
+#greenLogo_quatro-fruit {
+  width: 70%;
+  position: absolute;
+  left:-130px;
+}
+
+#yellowLogo_quatro-fruit {
+    width: 70%;
+    position:absolute;
+    left: 280px;
+}
+
+#yellowLogo_quatro-fruit {
+    animation: bounce 1s infinite alternate;
+}
+
+#greenLogo_quatro-fruit {
+    animation: bounce 1.5s infinite alternate;
+}
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+/*------------  SVG Animation -----------
+/* End SVG Animation */
 
 
    /* --------------------- Start Hero Mobile------------------ */
 
          
 
-   .hero {
+.hero {
     margin: 0;
     padding-bottom: 3em;
 }
@@ -587,7 +658,7 @@ header {
 .hero-img h3 {
     background: #e37a3b;
     padding: 1em 1.75em;
-    font-size: 1.5em;
+    font-size: 40px;
     font-weight: 300;
 }
 
@@ -614,8 +685,16 @@ header {
     font-size: 1.5em;
 }
 
+.mobile-image {
+    display: block;
+}
+
 .greenColor {
     background-color: #a9c954 !important;
+}
+
+.sizeLarge {
+    font-size: 16px !important;
 }
 
 
@@ -626,31 +705,27 @@ header {
     align-self: flex-end;
     text-transform: uppercase;
     justify-self: end;
+    margin-top:10px;
     margin-right: 2em;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    font-size: 18px;
+    /* font-size: 18px; */
     letter-spacing: 3px;
     margin-bottom: 4px;
     font-size: 1.5em;
 }
 
 .quote-right {
-    /* background: #fff;
-    align-self: center;
-    justify-self: end;
-    margin-right: 6em;
-    border-top-right-radius: 25px; */
 
     background: #a9c954;
     align-self: center;
     justify-self: start;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-bottom: auto;
     margin-top: auto;
-    margin-right: 6em;
-    padding: 2em;
+    margin-right: 2em;
+    padding: 1em;
     border-radius: 2em;
     display: block;    
 
@@ -659,6 +734,12 @@ header {
 .quote-right a {
     color: #fff;
 }  
+
+.quote-right  p {
+    font-size: 20px;
+}
+
+
 
 .contact-item {
     padding: 2em;
@@ -743,9 +824,11 @@ header {
     top: 450%;
     padding-top: 182px;
 }
-/* --------------------- End Mobile 404 Error Page------------------ */
 
 
+/* ----------------------Start Mobile Video Settings-------------- */
+
+/* ----------------------End Mobile Video Settings-------------- */
 
 
 }
@@ -820,6 +903,117 @@ header {
             margin-left: auto;
             margin-right: auto;
         }
+/*------------  SVG Animation ------------*/
+.frontPosition {
+    position: relative;
+}
+#orange_logo {
+    position:absolute;
+    display: block;
+}
+#greenLogo_quatro-fruit {
+    position: absolute;
+    margin-left: 190px;
+ 
+}
+
+#pink_logo {
+    position:absolute;
+    margin-left: 970px;
+    display: block;
+}
+
+#yellowLogo_quatro-fruit {
+    position:absolute;
+    margin-left: 720px;
+    display: block;
+}
+
+#greenLogo_quatro-fruit {
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  #pink_logo {
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+    
+
+#orange_logo {
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  #yellowLogo_quatro-fruit {
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+/*------------  SVG Animation ------------*/
 
 
         /*------------  End Grid Items ------------*/
@@ -911,16 +1105,15 @@ header {
         .quote-right h2 {
             font-family: cooper-black-std, serif;
             text-align: left;
+            padding-top: 5px;
         }
     
         .quote-right p {
             text-align: left;
             padding-bottom: 1em;
+            font-size: 20px;
         }
     
-        .quote-right a {
-            color: #000;
-        }        
 
         .social_Media {
             float: right;
@@ -951,7 +1144,7 @@ header {
 
         .subscribe:hover {
             background-color: #e9cb49;
-            /* color: #db434a; */
+            
         }
 
         .subscribe a{
@@ -1015,6 +1208,8 @@ header {
 
         #our-product-image img{
             display: block;
+            width:50%;
+            float:right;
         }
 
         #mobile-story {
