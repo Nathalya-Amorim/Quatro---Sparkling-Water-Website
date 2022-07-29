@@ -111,6 +111,12 @@ input[type=email]{
     color:#6BC3E3
 }
 
+video {
+	width: 90%;
+    margin: 5%;
+	border: thin solid #949393;
+}
+
 .hidden {
     display: none;
 }
@@ -216,6 +222,15 @@ input[type=email]{
     display: grid;
     grid-column: 2 / span 2;
     grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.four-items-flavours {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
     row-gap: 2em;
     column-gap: 2em;
@@ -584,48 +599,44 @@ header {
 }
 
 #orange_logo {
-    display: none;
-}
-
-#pink_logo {
-    display: none;
+    animation: bounce 1s infinite alternate;
+    animation-delay: .3s;
 }
 
 #greenLogo_quatro-fruit {
-  width: 70%;
-  position: absolute;
-  left:-130px;
+    animation: bounce 1s infinite alternate;
+    animation-delay: .6s;
 }
 
-#yellowLogo_quatro-fruit {
-    width: 70%;
-    position:absolute;
-    left: 280px;
+#pink_logo {
+    animation: bounce 1s infinite alternate;
+    animation-delay: .9s;
 }
 
 #yellowLogo_quatro-fruit {
     animation: bounce 1s infinite alternate;
+    animation-delay: 1.2s;
 }
 
-#greenLogo_quatro-fruit {
-    animation: bounce 1.5s infinite alternate;
-}
 @keyframes bounce {
     from {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
+
     to {
-      transform: translateY(-15px);
+        transform: translateY(-15px);
     }
-  }
-  @-webkit-keyframes bounce {
+}
+
+@-webkit-keyframes bounce {
     from {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
+
     to {
-      transform: translateY(-15px);
+        transform: translateY(-15px);
     }
-  }
+}
 /*------------  SVG Animation -----------
 /* End SVG Animation */
 
@@ -697,7 +708,11 @@ header {
     font-size: 16px !important;
 }
 
-
+.quote-right h2 {
+    font-family: cooper-black-std, serif;
+    text-align: left;
+    padding-top: 5px;
+}
 
 .hero-img h2.right,
 .hero-img h3.right,
@@ -825,6 +840,10 @@ header {
     padding-top: 182px;
 }
 
+.flavours {
+    position: absolute;
+    width: 100%;
+}
 
 /* ----------------------Start Mobile Video Settings-------------- */
 
@@ -879,9 +898,18 @@ header {
             column-gap: 2em;
         }
 
+        .four-items-flavours {
+            display: grid;
+            grid-column: 1 / span 4;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
         .four-items {
             display: grid;
-            grid-column: 2 / span 2;
+            grid-column: 1 / span 4;
             grid-template-columns: repeat(4, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
@@ -904,115 +932,19 @@ header {
             margin-right: auto;
         }
 /*------------  SVG Animation ------------*/
-.frontPosition {
-    position: relative;
-}
+
 #orange_logo {
-    position:absolute;
     display: block;
-}
-#greenLogo_quatro-fruit {
-    position: absolute;
-    margin-left: 190px;
- 
 }
 
 #pink_logo {
-    position:absolute;
-    margin-left: 970px;
     display: block;
 }
 
 #yellowLogo_quatro-fruit {
-    position:absolute;
-    margin-left: 720px;
     display: block;
 }
 
-#greenLogo_quatro-fruit {
-    animation: bounce 2s infinite alternate;
-}
-
-@keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-  @-webkit-keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-
-  #pink_logo {
-    animation: bounce 2s infinite alternate;
-}
-
-@keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-  @-webkit-keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-    
-
-#orange_logo {
-    animation: bounce 1s infinite alternate;
-}
-
-@keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-  @-webkit-keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-
-  #yellowLogo_quatro-fruit {
-    animation: bounce 2s infinite alternate;
-}
-
-@keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
-  @-webkit-keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
 /*------------  SVG Animation ------------*/
 
 
@@ -1029,7 +961,7 @@ header {
             top: 0px;
             border-bottom: 1px solid #e6e6e6;
             box-shadow: 0px 5px 8px #db434b73;
-            z-index: 9999999;
+            z-index: 90000;
         }
 
         .nav {
@@ -1101,12 +1033,7 @@ header {
             border-radius: 2em;
             display: block;
         }
-    
-        .quote-right h2 {
-            font-family: cooper-black-std, serif;
-            text-align: left;
-            padding-top: 5px;
-        }
+
     
         .quote-right p {
             text-align: left;
@@ -1450,12 +1377,31 @@ header {
         margin-right: 2em;
     }
 
+    .ml-1-em {
+        margin-left: 1em;
+    }
+
+    .mr-1-em {
+        margin-right: 1em;
+    }
+
     .center-text {
         text-align: center;
     }
 
+    .pa-1-em{
+        padding: 1em;
+    }
 
-    .pull-front {
+    .pull-front-10 {
+        z-index: 10;
+    }
+    
+    .pull-front-20 {
+        z-index: 20;
+    }
+
+    .pull-front-999 {
         z-index: 999;
     }
 
@@ -1582,3 +1528,24 @@ header {
   #teamates img:hover {
     transform: scale(1.2);
   }
+
+#overlay-panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99900;
+    display: none;
+}
+
+#overlay-close-btn {
+    position: absolute;
+    right: 1em;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+    cursor: pointer;    
+}
