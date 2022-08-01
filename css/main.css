@@ -117,7 +117,7 @@ input[type=email]{
 video {
 	width: 90%;
     margin: 1%;
-	border: thin solid #949393;
+	border: thin solid #e1e1e1;
 }
 
 .hidden {
@@ -293,7 +293,7 @@ header {
 		background-color: #fff;
 		top: 0px;
 		border-bottom: 1px solid #e6e6e6;
-		box-shadow: 0px 5px 8px #888;
+		box-shadow: 0px 5px 8px #db434b73;
 	}
 
 	/*------------  End Mobile Site header ------------*/
@@ -518,7 +518,8 @@ header {
     }
 
     #our-product h2 {
-        color:#e9cb49
+        color:#e9cb49;
+        font-family: cooper-black-std, serif;
     }
 
     .our-story-mobile-story {
@@ -529,6 +530,11 @@ header {
     .our-story-mobile {
         display: block;
         color:#626262;
+    }
+
+    .our-story-mobile h2 {
+        font-family: cooper-black-std, serif;
+        color: #e9cb49;
     }
 
     #our-story-full {
@@ -542,15 +548,16 @@ header {
      #our-product h2{
         color: #e9cb4a ;
         font-size: 1.5em;
-
     }
-
-   
 
     #our-product p {
         color: #595959;
         font-size: 20px;
+    }
 
+    #teamate-one h3 {
+        margin-top: 1em;
+        font-size: 1.3em;
     }
 
     #teamate-one p {
@@ -559,10 +566,14 @@ header {
 
     #teamate-two h3 {
         color: #db434a;
+        margin-top: 1em;
+        font-size: 1.3em;
     }
 
     #colorPink h2 {
         color: #db434a;
+        font-family: cooper-black-std, serif;
+        margin-bottom: -0.2em;
     }
 
     #colorPink span {
@@ -593,6 +604,9 @@ header {
         width: 20em;
         color: #db434a;
         transition: all ease-in .3s;
+        font-family: 'Tw Cen MT', sans-serif;
+        font-size: 1em;
+        text-align: center;
     }
 
     #contact-form input[type=text]:hover,
@@ -1030,8 +1044,8 @@ header {
 
         video {
             width: 75%;
-            margin-left: 5%;
-            border: thin solid #949393;
+            margin-left: 10%;
+            border: thin solid #e1e1e1;
         }
 
 
@@ -1363,7 +1377,8 @@ header {
     /*-----------End footer---------------*/
 
     .ma-1-em {
-        margin: 1em;
+        margin: 0.5em;
+        font-size: 1.2em;
     }
 
     .mb-2-em {
@@ -1417,6 +1432,7 @@ header {
     .pull-front-999 {
         z-index: 999;
     }
+
 
     #cocktails h2.label {
         align-self: center;
@@ -1554,7 +1570,7 @@ header {
   }
 
   #teamates img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
 .bold {
